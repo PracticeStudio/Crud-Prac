@@ -1,0 +1,177 @@
+/* Base styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f0f2f5;
+  min-height: 100vh;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Dashboard header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #c82333;
+}
+
+/* Login styles */
+.login-form {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.login-form h2 {
+  margin: 0 0 20px;
+  text-align: center;
+  color: #1a73e8;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-form button:hover {
+  background: #1557b0;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Form */
+.user-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.error {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Buttons */
+.submit-btn, .cancel-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.submit-btn {
+  background: #0d6efd;
+  color: white;
+}
+
+.cancel-btn {
+  background: #6c757d;
+  color: white;
+}
+
+/* User cards */
+.user-list {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.user-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.user-info h3 {
+  margin: 0 0 10px 0;
+}
+
+.user-info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.user-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.edit-btn, .delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+.edit-btn {
+  background: #0d6efd;
+}
+
+.delete-btn {
+  background: #dc3545;
+}
+
+/* Loading state */
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
